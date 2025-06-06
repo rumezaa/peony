@@ -1,0 +1,25 @@
+[project]
+name = "backend"
+version = "0.1.0"
+description = "Add your description here"
+readme = "./README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "aiohttp",
+    "fastapi[standard]>=0.115.12",
+    "uvicorn>=0.15.0",
+    "playwright>=1.40.0",
+    "beautifulsoup4>=4.9.3",
+    "anthropic>=0.8.0",
+    "pydantic>=2.0.0",
+    "python-dotenv>=0.19.0",
+    "python-multipart",
+    "browserbase"
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["app"]
