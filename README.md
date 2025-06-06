@@ -62,7 +62,14 @@ cd backend
 uv run fastapi dev
 ```
 
-2. The API will be available at `http://localhost:8000`
+2. Start frontend server:
+```bash
+cd frontend
+npm i
+npm run dev
+```
+
+The API will be available at `http://localhost:8000`
 
 ## API Endpoints
 
