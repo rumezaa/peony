@@ -1,6 +1,6 @@
 # Peony 🌸
 
-Peony is a powerful website cloning service that uses AI to create pixel-perfect replicas of websites. Built with FastAPI, Playwrite, BrowserBase and the Anthropic API, it can handle both single-page and multi-page website cloning with high accuracy.
+Peony is a powerful website cloning service that uses AI to create (not quite lol) pixel-perfect replicas of websites. Built with FastAPI, Playwrite, BrowserBase and the Anthropic API, it can handle both single-page and multi-page website cloning with an accuracy approved by rumeza.
 
 ## Features
 
@@ -26,7 +26,7 @@ Peony is a powerful website cloning service that uses AI to create pixel-perfect
 
 - Python 3.8 or higher
 - Node.js 16+ (for frontend)
-- Browserbase account and API key
+- Browserbase & Anthropic account and API key
 
 ### Installation
 
@@ -39,7 +39,7 @@ cd peony
 2. Install backend dependencies:
 ```bash
 cd backend
-uv pip install -r requirements.txt
+uv pip install
 ```
 
 3. Create a .env in the backend folder and add the following variables with api keys:
@@ -66,7 +66,7 @@ uv run fastapi dev
 
 ## API Endpoints
 
-### Clone Single Page
+### Clone Single Page - returns html code
 ```http
 POST /api/clone
 Content-Type: application/json
@@ -87,7 +87,7 @@ Content-Type: application/json
 }
 ```
 
-### Stream Clone Progress
+### Stream Clone Progress - useful for cloning updates
 ```http
 GET /api/clone/stream?url=https://example.com
 ```
@@ -108,5 +108,4 @@ peony/
 │   └── requirements.txt
 └── frontend/ (coming soon)
 ```
-# peony
-# peony
+
